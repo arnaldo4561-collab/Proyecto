@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(194, 76, 76);
+    color: rgb(255, 255, 255);
+
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(205, 116, 20);
+}
+
+h1.segundo{
+    font-size: 40px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(94, 189, 82);
+}
+
+button{
+    display: block;
+    margin: 50px auto;
+    padding: 12px 28px;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(122, 47, 47);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
