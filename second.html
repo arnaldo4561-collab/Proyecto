@@ -9,5 +9,29 @@
 <body>
     <h1>estas de sapo masca v</h1>
     <p>This is your index page.</p>
+    <div class="imagenes">
+        <img src="src/Arnaldo Barquet Foto.jpg" alt="Image" width="200">
+        <img src="src/Screenshot 2026-02-23 223947.png" alt="Image" width="200">
+        <img src="src/Screenshot 2026-02-24 170948.png" alt="Image" width="200">
+    </div>
+    
+    <div class="music">
+        <audio src="src/The Line.mp3" loop autoplay></audio>
+    </div>
+
+    <script>
+        const music = document.querySelector('.music audio');
+        window.addEventListener('load', () => {
+            const savedTime = localStorage.getItem('musicTime');
+            if (savedTime) {
+                music.currentTime = savedTime;
+            }
+            music.play();
+        });
+
+        setInterval(() => {
+            localStorage.setItem('musicTime', music.currentTime);
+        }, 1000);
+    </script>
 </body>
 </html>

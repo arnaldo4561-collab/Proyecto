@@ -31,3 +31,19 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
+
+img {
+    display: block;
+    margin: 28px auto;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+}
