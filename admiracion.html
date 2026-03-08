@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="estilo3.css">
+<title>Admiración</title>
+</head>
+
+<body>
+
+<h1>Eres una mujer admirable 💙</h1>
+
+<p>
+Espero que te encuentres muy bien.  
+
+Quiero que sepas que admiro mucho  
+lo trabajadora que eres,  
+todo lo que haces  
+y todo lo que eres capaz de lograr.
+
+Tienes sentimientos muy lindos  
+y un corazón muy bonito.  
+
+Eso te hace una mujer muy especial ✨
+</p>
+
+<div class="imagenes">
+
+<img src="src/imagen1.jpg" class="img1">
+<img src="src/imagen2.jpg" class="img2">
+<img src="src/imagen3.jpg" class="img3">
+
+</div>
+
+<button onclick="window.location.href='recuerdos.html'">
+Seguir 💫
+</button>
+
+<div class="music">
+<audio src="src/musica2.mp3" autoplay loop></audio>
+</div>
+
+<script>
+const music = document.querySelector('.music audio');
+
+window.addEventListener('load', () => {
+const savedTime = localStorage.getItem('musicTime');
+if (savedTime) music.currentTime = savedTime;
+music.play();
+});
+
+setInterval(()=>{
+localStorage.setItem('musicTime', music.currentTime);
+},1000);
+</script>
+
+</body>
+</html>

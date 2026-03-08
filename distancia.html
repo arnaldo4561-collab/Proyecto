@@ -2,23 +2,27 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="estilo1.css">
-<title>Para ti 💙</title>
+<link rel="stylesheet" href="estilo2.css">
+<title>Distancia</title>
 </head>
 
 <body>
 
-<h1>Hola corazoncito… 💙</h1>
+<h1>Aunque estemos lejos…</h1>
 
-<p class="mensaje">
-¿Cómo te encuentras hoy?...  
-Hice algo pequeño para ti,  
-pero lo hice con mucho cariño ✨
+<p>
+Sé que estamos a unos <b>4,850 km</b> de distancia.  
+Desde Guayaquil hasta Wisconsin Dells. 🌎  
+
+Pero la distancia no me impide  
+querer hacer algo bonito para ti 💙  
+
+Porque cuando alguien es especial,  
+ni los kilómetros cambian lo que uno siente.
 </p>
 
-<button onclick="window.location.href='distancia.html'">
-Dale click 💌
+<button onclick="window.location.href='admiracion.html'">
+Continuar ✨
 </button>
 
 <div class="music">
@@ -34,7 +38,7 @@ if (savedTime) music.currentTime = savedTime;
 music.play();
 });
 
-setInterval(() => {
+setInterval(()=>{
 localStorage.setItem('musicTime', music.currentTime);
 },1000);
 </script>

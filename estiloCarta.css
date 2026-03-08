@@ -1,0 +1,54 @@
+body{
+margin:0;
+font-family:Arial;
+text-align:center;
+
+background: linear-gradient(135deg,#d6ecff,#ffd6ec,#e6d6ff);
+padding-top:120px;
+
+color:#4b3f72;
+}
+
+.sobre{
+font-size:80px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.sobre:hover{
+transform:scale(1.1);
+}
+
+.sobre p{
+font-size:22px;
+margin-top:10px;
+}
+
+.carta{
+display:none;
+
+background:white;
+padding:40px;
+
+max-width:600px;
+margin:40px auto;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.carta h1{
+font-size:32px;
+}
+
+.carta p{
+font-size:20px;
+line-height:1.6;
+}
+
+.flecha{
+font-size:40px;
+cursor:pointer;
+margin-top:30px;
+}

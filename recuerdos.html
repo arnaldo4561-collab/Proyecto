@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilo4.css">
+<title>Recuerdos</title>
+</head>
+
+<body>
+
+<h1>Quiero que la pases increíble 💙</h1>
+
+<p>
+Quiero que hoy tengas un día muy bonito.  
+Que sonrías mucho y que todo te salga bien ✨  
+
+Y también espero que algún día podamos cumplir  
+muchas de las cosas que dejamos pendientes  
+cuando estuviste en Ecuador 🇪🇨  
+
+Sería muy bonito poder compartir  
+más momentos así contigo.
+</p>
+
+<div class="imagenes">
+
+<img src="src/imagen4.jpg" class="img4">
+<img src="src/imagen5.jpg" class="img5">
+<img src="src/imagen6.jpg" class="img6">
+
+</div>
+
+<button onclick="window.location.href='carta.html'">
+Abrir algo para ti 💌
+</button>
+
+<div class="music">
+<audio src="src/musica2.mp3" autoplay loop></audio>
+</div>
+
+<script>
+const music = document.querySelector('.music audio');
+
+window.addEventListener('load', () => {
+const savedTime = localStorage.getItem('musicTime');
+if (savedTime) {
+music.currentTime = savedTime;
+}
+music.play();
+});
+
+setInterval(() => {
+localStorage.setItem('musicTime', music.currentTime);
+}, 1000);
+</script>
+
+</body>
+</html>

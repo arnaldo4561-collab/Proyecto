@@ -1,0 +1,50 @@
+body{
+margin:0;
+font-family: Arial, sans-serif;
+text-align:center;
+
+background: linear-gradient(135deg,#d6ecff,#ffd6ec,#e6d6ff);
+background-size:400% 400%;
+animation:fondo 20s ease infinite;
+
+color:#4b3f72;
+padding-top:120px;
+}
+
+@keyframes fondo{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+h1{
+font-size:45px;
+}
+
+.mensaje{
+font-size:22px;
+max-width:600px;
+margin:auto;
+margin-top:20px;
+line-height:1.6;
+}
+
+button{
+display:block;
+margin:60px auto;
+padding:14px 30px;
+font-size:18px;
+
+background:white;
+color:#6d4edb;
+
+border:none;
+border-radius:30px;
+
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+}

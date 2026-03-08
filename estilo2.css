@@ -1,49 +1,48 @@
 body{
-    background-color: rgb(65, 21, 211);
-    color: rgb(255, 255, 255);
+margin:0;
+font-family: Arial;
+text-align:center;
 
+background: linear-gradient(135deg,#e6f0ff,#ffd6f0,#e8d6ff);
+background-size:400% 400%;
+animation:fondo 25s infinite;
+
+padding-top:100px;
+color:#4b3f72;
+}
+
+@keyframes fondo{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
 h1{
-    font-size: 50px;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    margin-top: 100px;
-    color: rgb(24, 31, 85);
+font-size:40px;
+margin-bottom:30px;
 }
 
 p{
-    font-size: 80px;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    margin-top: 50px;
-    color: rgb(67, 127, 59);
+font-size:21px;
+max-width:700px;
+margin:auto;
+line-height:1.7;
 }
 
 button{
-    display: block;
-    margin: 50px auto;
-    padding: 10px 20px;
-    font-size: 20px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(194, 76, 76);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+margin-top:50px;
+padding:12px 28px;
+
+border:none;
+border-radius:25px;
+
+background:white;
+color:#7c3aed;
+
+cursor:pointer;
+transition:0.3s;
 }
 
-img {
-    display: block;
-    margin: 28px auto;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-}
-
-.imagenes {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
+button:hover{
+transform:scale(1.1);
 }
