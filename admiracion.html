@@ -44,9 +44,17 @@ Seguir 💫
 const music = document.querySelector('.music audio');
 
 window.addEventListener('load', () => {
+
 const savedTime = localStorage.getItem('musicTime');
-if (savedTime) music.currentTime = savedTime;
+
+if(savedTime){
+music.currentTime = savedTime;
+}else{
+music.currentTime = 85; // empieza en 1:25
+}
+
 music.play();
+
 });
 
 setInterval(()=>{
